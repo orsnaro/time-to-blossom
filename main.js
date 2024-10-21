@@ -12,7 +12,7 @@
 // function toggleDarkMode() {
 //     document.body.classList.toggle('dark-mode');
 // }
-
+// omar rs edit
 // Example: Run this code when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeButton = document.querySelector('.btn-dark');
