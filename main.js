@@ -13,6 +13,7 @@
 //     document.body.classList.toggle('dark-mode');
 // }
 // omar rs edit
+// omr rs  edit 2
 // Example: Run this code when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeButton = document.querySelector('.btn-dark');
