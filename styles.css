@@ -1,0 +1,968 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+.navbar {
+    background-color: transparent;
+    position: absolute;
+     /* Transparent background */
+     /* position: fixed; */
+
+}
+.navbar-brand {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    color: white; /* White text for brand/logo */
+}
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.a.nav-link{
+    color: white;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Change color on hover */
+}
+.navbar-toggler {
+    border-color: white; /* White border for toggle button */
+}
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" fill="white"><path stroke="none" d="M0 0h30v30H0z" /><path d="M4 7h22v2H4zm0 7h22v2H4zm0 7h22v2H4z" /></svg>');
+}
+.navbar .nav-item:last-child .nav-link {
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-item:last-child .nav-link i {
+    margin-left: 5px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+body.dark-mode .navbar {
+    background-color: #1f1f1f; /* Dark navbar background */
+}
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #ffffff; /* Light color for nav links */
+}
+
+body.dark-mode .navbar-toggler {
+    border-color: #ffffff; /* White border for toggle button in dark mode */
+}
+
+body.dark-mode .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" fill="white"><path stroke="none" d="M0 0h30v30H0z" /><path d="M4 7h22v2H4zm0 7h22v2H4zm0 7h22v2H4z" /></svg>');
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: #2b2b2b; /* Dark background for dropdown */
+    color: #ffffff; /* Light text color for dropdown items */
+}
+
+body.dark-mode .dropdown-item {
+    color: #ffffff; /* Light color for dropdown items */
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: #ffc107; /* Change hover color to yellow */
+    color: #000; /* Dark text on hover */
+}
+/* ............................................. */
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.carousel-item {
+    height: 100vh; /* Each carousel item takes full height */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Ensures images cover the entire section */
+    height: 100%; /* Full height */
+}
+
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%; /* Positioning the caption */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Sofia", sans-serif;
+
+}
+
+h1, h1 {
+    text-align: center;
+    font-size: calc(3rem);
+    font-family: "Trirong", serif;
+
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.65rem;
+} 
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+     /* Overlay behind content but above images */
+}
+
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* ...................................... */
+
+/* .hero-section {
+    height: 100vh;
+    background-image: url('website22/website22/img12.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Sofia", sans-serif;
+
+}
+.hero-content h1 {
+    font-size: 4rem;
+    font-family: "Trirong", serif;
+    margin-bottom: 20px;
+}
+
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.btn-custom {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: white;
+    color: black;
+} */
+
+/* .................................................. */
+.FristSection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.FristSection img{
+    margin-left: 120px;
+}
+.FristSection .h4, h4 {
+    font-size: calc(1rem + .1vw);
+    text-align: center;
+    font-family: "Trirong", serif;
+    margin-top: 15px;
+
+}
+/* .FristSection h4{
+    font-family: "Trirong", serif;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+} */
+
+.FristSection P{
+    text-align: center;
+    font-size: 0.9rem;
+    color: #5f5e5e;
+    margin-bottom: 10px;
+}
+
+/* ....................................... */
+.SecandSection {
+    background-color: #fff0e9 ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.SecandSection .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff0e9; /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.hero-content h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Sofia", sans-serif;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-family: "Trirong", serif;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    margin-bottom: 30px;
+}
+
+.img-container {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.img-container:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Label styling for Sold and Sale */
+.label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.sold {
+    background-color: rgb(94, 94, 94); /* Red for Sold */
+}
+
+.sale {
+    background-color: rgb(94, 94, 94); /* Green for Sale */
+}
+
+.SecandSection a h5 {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.SecandSection a {
+    text-decoration: none;
+}
+
+.SecandSection a h5:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.SecandSection p {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Styling for crossed-out old price and new price */
+del {
+    color: #0f0e0e; /* Gray color for old price */
+    margin-right: 5px;
+}
+
+.new-price {
+    color: #5f5e5e; /* Highlighted color for the new price (red in this case) */
+    font-weight: bold;
+}
+/* ................................... */
+
+.ThirdSection {
+    background-image: url('website22/website22/img12.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: black;
+    z-index: -1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 0 100px 0;
+    box-shadow: inset;
+    height: 70VH;
+}
+
+
+.ThirdSection h1{
+    color: white;
+}
+
+.ThirdSection h4{
+    color: white;
+    font-family: sans-serif;
+}
+/* ......................................... */
+
+.FourthSection {
+    height: 100vh;
+    background-position: 40%;
+    color: white;
+    padding: 100px 0;
+    background-image: url('website22/website22/img13.png'); 
+    background-repeat: no-repeat;
+
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.4); Dark overlay */
+    
+}
+.hero-content {
+    position: relative;
+    z-index: 3;
+    
+
+}
+
+.hero-content h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Sofia", sans-serif;
+    color: #0f0e0e;
+
+}
+.FourthSection .hero-content h1 {
+    text-align: left;
+    font-size: 3rem;
+    font-family: "Trirong", serif;
+    margin-bottom: 20px;
+    color: #0f0e0e;
+}
+
+.FourthSection img{
+    width: 550px;
+}
+
+
+.FourthSection .hero-content p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    color: #0f0e0e;
+    margin-left: 5px;
+    text-align: start;
+    margin-right: 5px;
+
+}
+.FourthSection .btn-custom {
+    background-color: transparent;
+    border: 2px solid rgb(23, 23, 23);
+    color: rgb(16, 16, 16);
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+.FourthSection .btn-custom:hover {
+    background-color: rgb(231, 144, 23);
+    color: black;
+}
+
+/* ............................................................. */
+
+.full-page-carousel {
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    overflow: hidden;
+}
+
+.full-page-carousel .carousel-item img {
+    height: 100vh;
+    object-fit: cover; /* Ensures the image covers the full container */
+}
+
+.full-page-carousel .carousel-caption {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.full-page-carousel h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Sofia", sans-serif;
+}
+
+.full-page-carousel h1 {
+    font-size: 1.8rem;
+    font-family: "Trirong", serif;
+    margin-bottom: 20px;
+}
+
+.full-page-carousel p {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.full-page-carousel h3 {
+    font-size: 1.5rem;
+    font-family: "Trirong", serif;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 100%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 3rem;
+    width: 3rem;
+    background-size: 100%;
+}
+
+/* .FifthSection {
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.FifthSection .hero-content h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Sofia", sans-serif;
+    color: white;
+
+}
+
+.FifthSection h3{
+    font-family: "Trirong", serif;
+
+}
+
+.FifthSection .hero-content h1 {
+    font-size: 4rem;
+    font-family: "Trirong", serif;
+    margin-bottom: 20px;
+}
+
+.FifthSection F1{
+    font-size: 1rem;
+}
+
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+} */
+/* ..................................... */
+
+.SexSection {
+    background-image: url('website22/website22/img16.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.hero-content h2 {
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Sofia", sans-serif;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-family: "Trirong", serif;
+    margin-bottom: 20px;
+}
+
+
+
+
+.product-card {
+    margin-bottom: 30px;
+    text-align: center; /* Center align the content */
+}
+
+.img-container {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.img-container img {
+    width: 100%;
+}
+.SexSection p {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    font-size: 0.65rem;
+}
+
+.img-container:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Style for the social media icons */
+.social-icons {
+    display: flex; /* Flexbox to align icons in a row */
+    justify-content: center; /* Center the icons */
+    gap: 5px; /* Space between icons */
+    list-style: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+.social-icons .nav-item {
+    display: inline-block; /* Ensures items are in a row */
+}
+
+.social-icons .nav-link i {
+    font-size: 1rem; /* Adjust the size of the icons */
+    color: black; /* Default icon color */
+    transition: color 0.3s ease;
+}
+
+.social-icons .nav-link i:hover {
+    color: #007bff; /* Change color on hover */
+}
+/* .................................... */
+
+.SevenSection{
+    margin-top: 30px;
+    background-color: rgba(247, 231, 210, 0.583);
+
+}
+
+.SevenSection img{
+    width: 290px;
+}
+
+.SevenSection h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Trirong", serif;
+
+}
+
+.form-control {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 0.8rem 25rem  0.8rem  1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.g-3, .gy-3 {
+    --bs-gutter-y: 1rem;
+    display:flex;
+    justify-content:center;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-right: px;
+    padding: 0.8rem;
+    color: #fff;
+    background-color: #000000;
+    border-color: #0d6efd;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+    margin-left: -15px;
+}
+/* ..................................... */
+.footer {
+    padding: 60px;
+    background-color: #070606f0;
+}
+
+.footer p {
+    margin-top: 15px;
+    color: #5f5e5e;
+}
+
+.footer h5 {
+    font-size: 0.8rem;
+    color: #5f5e5e;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #ced4da;
+}
+
+.footer img {
+    width: 80px;
+}
+
+.footer .social-icons {
+    justify-content: left;
+    display: flex; /* Flexbox to align icons in a row */
+    margin-top: 15px; /* Space between image and icons */
+    list-style: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+.footer .social-icons .nav-item {
+    display: inline-block; /* Ensures items are in a row */
+    margin-right: -15px; /* Add spacing between icons */
+}
+
+.footer .social-icons .nav-link i {
+    font-size: 1rem; /* Adjust the size of the icons */
+    color: #5f5e5e;
+    transition: color 0.3s ease;
+}
+
+.social-icons .nav-link i:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+
+.c1 h4{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+    color: #5f5e5e;
+    background-color: #000000;
+}
+/* Remove gap between footer and the last section */
+.footer, .c1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Adjusting padding inside footer content */
+  .footer {
+    padding: 60px 0; /* Ensure the padding is only on top and bottom */
+    background-color: #070606f0;
+  }
+  
+  /* Remove any margin for the .c1 section */
+  .c1 h4 {
+    margin: 0; /* Remove default margins */
+    padding: 20px 0;
+    font-size: 0.8rem;
+    color: #5f5e5e;
+    background-color: #000000;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 1200px) {
+    
+.hero-content h2 {
+        font-size: 2rem;
+        font-family: "Sofia", sans-serif;
+
+    }
+} */
+
+/************************ Start Media Query *****************************/
+
+@media only screen and (min-width: 0px) and (max-width: 575px){
+    .navbar-brand {
+        font-size: 1.5rem; 
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; 
+        margin-left: 10px; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; 
+    }
+    
+    .hero-content p {
+        font-size: 1rem; 
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+    
+    .FristSection h4 {
+        font-size: 18px; 
+    }
+    
+    .SecandSection a h5 {
+        font-size: 1rem; 
+    }
+
+    .ThirdSection h1,
+    .FourthSection .hero-content h1,
+    .FifthSection .hero-content h1 {
+        font-size: 2.5rem; 
+    }
+    
+    .SixSection .hero-content h1 {
+        font-size: 2.5rem; 
+    }
+    
+    .SeventhSection h1 {
+        font-size: 1.2rem; 
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .navbar-brand {
+        font-size: 1.7rem; 
+    }
+
+    .hero-content h1 {
+        font-size: 3rem; 
+    }
+    
+    .FristSection h4 {
+        font-size: 19px; 
+    }
+    
+    .ThirdSection h1,
+    .FourthSection .hero-content h1,
+    .FifthSection .hero-content h1 {
+        font-size: 3rem; 
+    }
+    
+    .SecandSection a h5 {
+        font-size: 1.1rem; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .navbar-brand {
+        font-size: 1.9rem; 
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem; 
+    }
+    
+    .FristSection h4 {
+        font-size: 20px; 
+    }
+
+    .ThirdSection h1,
+    .FourthSection .hero-content h1,
+    .FifthSection .hero-content h1 {
+        font-size: 3.5rem; 
+    }
+
+    .SecandSection a h5 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .navbar-brand {
+        font-size: 2rem; 
+    }
+
+    .hero-content h1 {
+        font-size: 4rem; 
+    
+    .FristSection h4 {
+        font-size: 21px; 
+    }
+
+    .ThirdSection h1,
+    .FourthSection .hero-content h1,
+    .FifthSection .hero-content h1 {
+        font-size: 4rem; 
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1550px){
+    .navbar-brand {
+        font-size: 2rem; 
+    }
+
+    .hero-content h1 {
+        font-size: 4rem; 
+    }
+    
+    .FristSection h4 {
+        font-size: 22px;
+    }
+
+    .ThirdSection h1,
+    .FourthSection .hero-content h1,
+    .FifthSection .hero-content h1 {
+        font-size: 4rem; 
+    }
+}
+
+/************************ End Media Query *****************************/
+
+
+
+
+
